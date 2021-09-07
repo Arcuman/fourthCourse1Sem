@@ -1,0 +1,17 @@
+;
+; 
+; Загрузочный файл для Primary сервера ns1-xx.axx-03-1.uir.pac
+;
+; type		domain			source file or host
+;
+cache		.				cache.dns
+;primary	.					root.dns
+primary		axx-03-1.uir.pac			axx-03-1.uir.pac.dns
+primary		_udp.axx-03-1.uir.pac		_udp.dns
+primary		_tcp.axx-03-1.uir.pac			_tcp.dns
+primary		_sites.axx-03-1.uir.pac		_sites.dns
+primary		_msdcs.axx-03-1.uir.pac		_msdcs.dns
+;primary		in-addr.arpa			inaddr.dns
+primary		0.0.127.in-addr.arpa			localhost.dns
+primary		xx.10.in-addr.arpa			10.xx.dns
+secondary	azz-03-1.uir.pac	192.168.6.zz	azz-03-1.uir.pac.sec.dns

@@ -1,0 +1,55 @@
+;
+;  Database file axx-03-1.uir.pac.dns for axx-03-1.uir.pac zone.
+;      Zone version:  2006092001
+;
+
+@                       IN	SOA	ns1-xx.axx-03-1.uir.pac.	administrator.ns1-xx.axx-03-1.uir.pac.	(
+		2006092001	; serial number
+                        	900         ; refresh 15m
+                        	600         ; retry	10m
+                        	86400       ; expire	1 day
+                        	3600) 	; minimum TTL	1h
+
+;
+;  Zone NS records
+;
+@		IN	NS	ns1-xx.axx-03-1.uir.pac.
+			IN	NS	ns1-xx.axx-03-1.uir.pac.
+
+;
+;  Zone MX records
+;
+@		IN	MX	0	ns1-xx.axx-03-1.uir.pac.
+@		IN	MX	10	ns1-xx.azz-03-1.uir.pac.
+@		IN	MX	20	ns1.uir.pac.
+;	Glue records
+ns1-xx.azz-03-1.uir.pac.	IN	A	192.168.6.zz
+ns1.uir.pac.	IN	A	192.168.5.254
+;
+;	A Records
+;
+ns1-xx		IN	A	192.168.6.xx
+;
+www		IN	CNAME	ns1-xx.axx-03-1.uir.pac.
+ftp		IN	CNAME	ns1-xx.axx-03-1.uir.pac.
+mail		IN	CNAME	ns1-xx.axx-03-1.uir.pac.
+;
+m1		IN	A	10.xx.0.1
+m2		IN	A	10.xx.0.2
+m3		IN	A	10.xx.0.3
+m4		IN	A	10.xx.0.4
+m5		IN	A	10.xx.0.5
+m6		IN	A	10.xx.0.6
+dc1		IN	A	10.xx.0.252
+gw-net1		IN	A	10.xx.0.253
+;
+c1		IN	A	10.xx.1.1
+c2		IN	A	10.xx.1.2
+c3		IN	A	10.xx.1.3
+c4		IN	A	10.xx.1.4
+c5		IN	A	10.xx.1.5
+c6		IN	A	10.xx.1.6
+dc2		IN	A	10.xx.1.252
+gw-net2		IN	A	10.xx.1.253
+;
+; End of file

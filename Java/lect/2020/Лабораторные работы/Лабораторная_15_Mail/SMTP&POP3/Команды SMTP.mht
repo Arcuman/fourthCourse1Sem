@@ -1,0 +1,702 @@
+Content-Type: multipart/related; start=<op.mhtml.1256041211984.62d000424a7e3a71@172.16.192.253>; boundary=----------hAQp0VhsWHOvXTDRj1MXZB
+Content-Location: http://www.vinnitsa.com/doc/article/SMTP.shtml
+Subject: =?utf-8?Q?=D0=9A=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D1=8B=20SMTP?=
+MIME-Version: 1.0
+
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=SMTP.shtml
+Content-Type: text/html; charset=windows-1251; name=SMTP.shtml
+Content-ID: <op.mhtml.1256041211984.62d000424a7e3a71@172.16.192.253>
+Content-Location: http://www.vinnitsa.com/doc/article/SMTP.shtml
+Content-Transfer-Encoding: 8bit
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<!-- -------------s---t---a---r---t------t---i---t---l---e------------- -->
+<title>
+Команды SMTP
+</title>
+<!-- ------------------e----------n---------d-------------------------- -->
+<LINK HREF="http://vinnitsa.com/doc/css/izone.css" TYPE="text/css" REL="stylesheet">
+</head>
+<style type="text/css">
+a  {font: 14px Courier; text-decoration: none}
+td  {font: 14px Courier; color: black}
+</style>
+<body marginwidth=0 marginheight=0 leftmargin=0 topmargin=0 link="red" alink="red" vlink="red" background="http://vinnitsa.com/next/next/images/back.gif" bgproperties="fixed">
+<table cellspacing=0 cellpadding=0 width=100% height=100% border=0>
+<tr>
+<td>
+&nbsp;<a href=http://vinnitsa.com/ name=top><img alt=docs&faqs border=0 src=http://vinnitsa.com/doc/img/home.gif></a>
+<a href=http://vinnitsa.com/doc/><img alt=docs&faqs border=0 src=http://vinnitsa.com/doc/img/left.jpg></a>
+<td>
+<td height=24 align=right><img src="http://vinnitsa.com/next/next/images/text.gif" border=0></td>
+<td bgcolor="black"><img src="http://vinnitsa.com/next/next/images/text1.gif" border=0></td>
+</tr><tr>
+<td colspan=4 bgcolor="#ef2f00" style="font: bold 18px Courier"><font color="white">&nbsp&nbsp&nbsp;
+<!-- -------------s---t---a---r---t------n---a---m---e----------------- -->
+Команды SMTP
+<i></i>
+<!-- ------------------e----------n---------d-------------------------- -->
+</font></td></tr>
+<tr valign=top>
+  <td width=100% height=100% colspan=3>
+<!-- -------------s---t---a---r---t------b---o---d---y----------------- -->
+<center><div align=center width=85%><table width=85% align=center border=0><tr><td>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=100%>
+<TR><TD VALIGN="TOP" COLSPAN=3 BGCOLOR="#000000">
+<FONT FACE="Times New Roman" SIZE=2 COLOR="#ffffff"><P ALIGN="CENTER">Команды </FONT><FONT SIZE=2 COLOR="#ffffff">SMTP</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="CENTER">Команда</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P ALIGN="CENTER">Синтаксис команды</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P ALIGN="CENTER">Описание команды</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>HELLO (HELO)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>HELO &lt;SP&gt; &lt;domain&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда используется что бы идентифицировать </FONT><FONT SIZE=2>SMTP-</FONT><FONT FACE="Times New Roman" SIZE=2>отправителя на принимающем сервере.</P>
+<P>В случае успешного выполнения этой команды получатель и отправитель готовы к дальнейшей работе.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>MAIL (MAIL)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>MAIL &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда используется что бы отправить почту по одному или более адресатам. Параметром команды является ваш </FONT><FONT SIZE=2>e-mail </FONT><FONT FACE="Times New Roman" SIZE=2>адресс. (</FONT><FONT SIZE=2>exp: MAIL FROM: mypost@mail.net) </FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>RECIPIENT (RCPT)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>RCPT &lt;SP&gt; TO:&lt;forward-path&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда используется что бы определить одного получателя почты.Множество получателей определяются множеством этих команд.(</FONT><FONT SIZE=2>exp: RCPT TO yourpost@mail.net)</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>DATA (DATA)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>DATA &lt;CRLF&gt;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Получатель получает данные о дате отправке почты.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>SEND (SEND)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>SEND &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда используется для возможности отправки почтовых данных на один или больше почтовых терминалов.Аргумент команды содержит в себе обратный маршрут.</P>
+<P>Команда считается успешно выполненной, если сообщение будет успешно доставленно на терминал. </FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>SEND OR MAIL (SOML)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>SOML &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда используется что бы произвести отправку почты на один или более терминалов или почтовых ящиков. Для каждого получателя почтовые данные доставляются на терминал (если получатель имеет права снимать почту с терминала) иначе на почтовый ящик. Команда считается успешно выполненной, если почта успешно доставленна на почтовый ящик или терминал. </FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>SEND AND MAIL (SAML)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>SAML &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда используется что бы произвести отправку почты на один или более терминалов и почтовых ящиков. Для каждого получателя почтовые данные доставляются на терминал (если получатель имеет права снимать почту с терминала) и для всех получателей на их почтовые ящики. Команда считается успешно выполненной если почта была доставленна на почтовые ящики.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>RESET (RSET)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>RSET &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда определяет, что текущая работа с почтой должна быть прервана. Все сохранённые отправители и получатели должны разъединиться и буферы передачи должны быть очищенны. Получатель должен послать ОК в ответ на эту команду.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>VERIFY (VRFY)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>VRFY &lt;SP&gt; &lt;string&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда просит подтвердить получателя, что он идентифицировал пользователя по аргументу. Для этого должны быть возвращены имя (полное имя) пользователя или почтовый адресс.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>EXPAND (EXPN)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>EXPN &lt;SP&gt; &lt;string&gt; &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда просит, чтобы получатель подтвердил аргументы идентифиции всех в почтовом списке (</FONT><FONT SIZE=2>mailing list) </FONT><FONT FACE="Times New Roman" SIZE=2>и если это так, то вернул число корреспондентов в этом списке</FONT><FONT SIZE=2>:</FONT><FONT FACE="Times New Roman" SIZE=2> полное имя пользователя (если знает) и полное название почтового ящика.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>HELP (HELP)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>HELP [&lt;SP&gt; &lt;string&gt;] &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда заставляет получателя высылать отправителю </FONT><FONT SIZE=2>HELP </FONT><FONT FACE="Times New Roman" SIZE=2>команду. Команда может иметь аргумент (любую другую команду) и возвращать различные описания как ответ.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>NOOP (NOOP)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>NOOP &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда не имеет никаких аргументов и не требует предварительного выполнения других команд. Она просит вынуждает получателя ответить ОК.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>QUIT (QUIT)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>QUIT &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда определяет что получатель должен послать команду ОК и затем закрыть канал  передачи.</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>TURN (TURN)</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>TURN &lt;CRLF&gt;</P>
+</FONT><FONT SIZE=2><P>&nbsp;</FONT></TD>
+<TD WIDTH="38%" VALIGN="TOP">
+<FONT FACE="Times New Roman" SIZE=2><P>Эта команда означает, что получатель должен</FONT><FONT SIZE=2>:</P>
+<P>1.</FONT><FONT FACE="Times New Roman" SIZE=2>Послать ОК в ответ и затем взять на себя роль </FONT><FONT SIZE=2>SMTP </FONT><FONT FACE="Times New Roman" SIZE=2>передатчика или</P>
+<P>2.Отвечает отказом и остаётся в роли </FONT><FONT SIZE=2>SMTP </FONT><FONT FACE="Times New Roman" SIZE=2>приёмника.</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=3 BGCOLOR="#000000">
+<FONT FACE="Times New Roman" SIZE=2 COLOR="#ffffff"><P ALIGN="CENTER">Коды ответов</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>500</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Syntax error, command unrecognized</P>
+<P>[This may include errors such as command line too long]</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>501</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Syntax error in parameters or arguments</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>502</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Command not implemented</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>503</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Bad sequence of commands</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>504</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Command parameter not implemented</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>211</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>System status, or system help reply</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>214</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Help message</P>
+<P>[Information on how to use the receiver or the meaning of a</P>
+<P>particular non-standard command; this reply is useful only                       to the human user]</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>220</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>&lt;domain&gt; Service ready</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>221</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>&lt;domain&gt; Service closing transmission channel</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>421</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>&lt;domain&gt; Service not available,closing transmission channel</P>
+<P>[This may be a reply to any command if the service  knows it must shut down]</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>250</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Requested mail action okay, completed</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>251</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>User not local; will forward to &lt;forward-path&gt;</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>450</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Requested mail action not taken: mailbox unavailable</P>
+<P>[E.g., mailbox busy]</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>550</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Requested action not taken: mailbox unavailable</P>
+<P>[E.g., mailbox not found, no access]</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>451</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Requested action aborted: error in processing</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>551</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>User not local; please try &lt;forward-path&gt;</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>452</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Requested action not taken: insufficient system storage</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>552</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Requested mail action aborted: exceeded storage allocation</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>553</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Requested action not taken: mailbox name not allowed</P>
+<P>[E.g., mailbox syntax incorrect]</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>354</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Start mail input; end with &lt;CRLF&gt;.&lt;CRLF&gt;</FONT></TD>
+</TR>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P>554</FONT></TD>
+<TD WIDTH="78%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Courier New" SIZE=2><P>Transaction failed</FONT></TD>
+</TR>
+</TABLE>
+</td></tr></table></div></center><br>
+<!-- ------------------e----------n---------d-------------------------- -->
+  </td>
+  <td bgcolor="#ffc00f"><img src="http://www.vinnitsa.com/next/next/images/man.jpg" hspace=0 vspace=0 border=0></td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=izone.css
+Content-Type: text/css; name=izone.css
+Content-Location: http://vinnitsa.com/doc/css/izone.css
+Content-Transfer-Encoding: 8bit
+
+A:link {text-decoration: none; color: #0033cc}
+A:visited {text-decoration: none; color: #0033cc}
+A:hover {text-decoration: underline; color: #000080}
+a:link.up {text-decoration: underline; color: #FFFFFF}
+a:visited.up {text-decoration: underline; color: #FFFFFF}
+a:hover.up {color: #FFFFFF; text-decoration: underline; BACKGROUND: #ADC2EB}
+.up  {font-family: Times New Roman; font-size: 10pt; color: #FFFFFF}
+.text {font-family: arial, verdana; font-size: 10pt; color: #000000}
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=back.gif
+Content-Type: image/gif; name=back.gif
+Content-Location: http://vinnitsa.com/next/next/images/back.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhZABkAKIAAPz8/Pr6+vv7+/39/f7+/vn5+f///wAAACH5BAAAAAAALAAA
+AABkAGQAAAP/aLrc/jC2AYQIgZW9I5fAII1kaRoDZWUL10FfNBBnbZeEemmu98q3
+oJCR0/FiDyRENGzaihXB8ecgUB9Mp5ZEyEUZgp5vS252UxaiGFYou2/nQXoqhQTa
+7zwOWm+tk316glV8E38OV4OKXV6BCoeIipILjCo0DHeJDQFZk4KVFZ0oHCwenpJx
+AqIGkKeuBqmOo5qvnnEVSRurtZO3ApcMA0q8tmcVAA9heMSusXYFssyDvksY0qeg
+qhAAAcjXvYXb0d9v2SC75G633hDA6XqVcu/St+7zr3Ho96hx+8SV9vwV6yKQF6OA
+BXslXMiwocOHECNKnEixosWLGDNq3Mix/6PHjyBDihwJ7yBCk4wyHkwRYgbKly8r
+mmQJoGUKmDgJQkSZQoeAmj2DCh16sOHLoFEsKK1pEylQoUX9wXSqNICFmj+ZasWq
+9GfPlPeO9mRa1eoIOV27PgX7TSzNpPpGEEh79aZOZjypWohrI21Lts3yUuA6J8/c
+ui4Rfpo5NqkFxTxmCKHwFbI6xizphpibyYXnzwX4OqhseQtmwiswgF7NesO4JYmn
+xRvcFYPq1rhZ14haLh7q27mDty5NhDicfI5tC18dwcrnUgbXlV3uGXoJAJ6N9y6i
+Azh1LS5el/R1oXNw61qEQQvMp7z51ooGmAXX3ntr0aa1D/FdQfX75/8d+Zbaf555
+JGB5yugWIHkYJAgafmwUoN9A9dnXygi5pXOghRfmwpqDtGDDIIchqgGfOP9sSGCJ
+fnzGkIqssRMhKQ4dWN5q6DVQ3U4jKthOgTy2dyNoEjgoY409gvaacywWBCORPjTp
+ZIWrvdahURUSGOUyE6n435FHiNfOO08C6SGXOEBYTGZVQekAdlI+4tqEizAon4sR
+5ujAHWKm2F4I/0XJRZzRsfmLembq6JpcBeipoZAGgIjmESTMNyUae0WKp4cjFOYk
+myxIusQwexoFqgKiciqBpQmBGqpn45Cqo0M+caLAe4I25+g93QVwCZyyyjkpA7g0
+lJQ1CjAZYrAFqILZQAIAOw==
+
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=home.gif
+Content-Type: image/gif; name=home.gif
+Content-Location: http://vinnitsa.com/doc/img/home.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhhAARALMAAOhHAfehV/6FAPNnAfvEg+xSAft9AOQ9AfeNNPh2APZvAPBe
+AfN9KfV3FvJsEP7krSH5BAAAAAAALAAAAACEABEAAAT/UMhJKzU4652690oojkNp
+nuWirqxaLEUszzRQAHiu7/jh/8Ag0EKsGATHjSZh+HwUiZFUMaCiUoNFtrV6eWng
+283G2wUBwvSwSDwilcsm09kJRaVV69XEZb1cX2A2MWRlOQdmiGpqbGxJcBlzdCBT
+IVV7WFp9XYFhMmRihj0+aIuLjW1IqpByk1BQDQEBCCGyCCexBAQBDVsLCLIBKsEM
+MMDBsg6fhGOiZqWmQqhFrJGtdK8IDw8BIdsEVtrb47cqBOMLDOMBL+fj2ww1zc6K
+pNFp00YSj5CTTwriuin4VsIBOXEPGpgbxyDAOhjukClbBqoQvXr3fuSzUA2DJFch
+/8TtcviAQAlxtwagXHguwLmWMSIGG0RzHj000DJq3Mix2kdXCN+ZVEAypTpuWVpy
+09US4rtt8pjdLIVTpw+eEzp6vOZEhEhZBAeQZHBym7AFLSPCRGs2mCCbU62u4emG
+Hwc5XJ8E9FayylGTbB8UYwv2AQKYBdx5GhTKGc6qcg9gzfqmX15KAM1G+WbFna5v
+K1qKc7DW3Tt2MyzCfQYkZ7TJqzr+fBJl78C+JRSYLulAU0uDBAg7fYpaKqG4kK1i
+rWv3rr86lUSgcMAAgYMUmzh5St0Yx+pDoyLDbg5nNog7Uy5h0uKrz59O27uXQdSj
+qmtTsGOX9+gKfSVMWbSXXSMMMMBHkXyGYBSZZPnJdlkd/uGhxx6aZOdCgfE19h14
+yekUAQA7
+
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=left.jpg
+Content-Type: image/jpeg; name=left.jpg
+Content-Location: http://vinnitsa.com/doc/img/left.jpg
+Content-Transfer-Encoding: Base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkS
+Ew8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJ
+CQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIyMjIyMjIyMjL/wAARCAARAIQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEA
+AAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6
+Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZ
+mqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx
+8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREA
+AgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hp
+anN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPE
+xcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDa
+ooor8yPvyNutNPSnvTD0qkUia2gg3RyXrskLtgbfvEZwW6Hgc9uSMDuQR6dHPOkU
+eoWpkdgqjEnJPT+CltriDdHHeozwIwIKfeAzkr1HB5+hOR3BSPUY4Jkmj0+1DowZ
+TmQ4I5H8ddUOSyvb8bmT57u17/K34/iS6JpMerSzpJI6CJNw2AEmpF0CKXW1sUkn
+SIRGSV5Ewy9e35fnVbTdVOmLc4i3meMxg79u336UaZrkmmrcuIvOuJVCrI752Ae2
+Oa3pujyxUt+pnUjiOaTg9Om33/IW68PMuu21hBKWjuUDxyMP4cEk8emDUl1oFjLa
+3zWF5LJNY585ZEwGxnJH5H8qS58TyzSWE4tkS5tCfnVvlcHgjbjgY96lm8TWb2V5
+BHpzW8l0jB5Y3BOTzjp0yT+dbL2Gv/B7f5k/7X7un5d+vy7HKVG3WpKjbrWCPUQw
+9KjNSHpUZrRFIa1R1Iajq0UgooooGdnRRRXjHnjJO1RnoaKKpFIYepqM9aKK0RSG
+t0qE9PxoorRFIjP3j9ajbv8AX+lFFaItEdRv978KKK0RSGHp+NRv940UVoikNPSo
+6KKtFIKKKKBn/9k=
+
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=text.gif
+Content-Type: image/gif; name=text.gif
+Content-Location: http://vinnitsa.com/next/next/images/text.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhFQEWAKIAACEhIYGBgefn56CgoEVFRbu7uwAAAP///yH5BAAAAAAALAAA
+AAAVARYAAAP/eLrc/jDKSau9OOvNu/9gKI5kaZ5oqq5s675wLM90bd94ru987//A
+IKUQCAiPyGRIUBQ8AgajckqtQpiGwtPgKHgLAoH2IHaSv1rv2axAg9dt8RiuKLvP
+4/dBvUcv5HVgZQt8ZXJqanZoYhKIeW+HTot4DYeFkGlsfG1gk15OjHCWbIyMmJZa
+gKN6DQVZWw4GAABZUAcDBgRRe7m0BwQEB1BSCgQAxlkDAAEAAweytEbMzFpQBAHI
+ywXHu1ECs7MC2cSuBk7RrnPAwrkBrsi/wcPjthHA387GswOux87Qr47NYtDPmLxl
+ALwAzAcMgBhwA/QRKNDQoS1cugJEnDVx/4EtW7toUaSljZtGia6IEXzloB6DLOmg
+CNgl0xW7eN92LViXbpkwAM/kZTGQTyNLXqm86HpWxOE3I+lWNsvpLsobYLjycLF1
+LxpSdpsaALt265WxqApgZglD5GjUe0R/VTViDJcToscYrDuDq4g5mubiNfjIJYqy
+V1HlLBXMlFWbowxcLlDbViRSm1yx6iwWLJ2ssUx5QTl2TXLUaUuhBROM9jE2v3PP
+AnOJmcvYvl+HhXOArBoXsEcp94Uy5+3Ez9dOR8mlWSXPY8NGIza7egGuWYWZZc29
+bPHedpu/tvz9h7JMn8yYCP2VNzzPLPf2PLNozifbXZJeAWZKbRtUyP89JWTVWlEA
+kxIZuNxkUGjKlfWJXtc4lNI3x42hDFLrbPeYFl0ZcV8A3wjoTBjGgCKYLTP59dRP
+TuzFgBggaTOdFvsxFlJ14g1GXlpAxcTFNrIMAIUBRDIXmHudwaRLNxDdQpIzhyVZ
+jUDZseNNjkgx05hq4gQT5X663PWfb8YYEddOwYTDTC4KpVFkkcoA4xZ1Tgb5jixT
+4ikOkRwGE2JGtgDZDGcQxPjVaVQSOt8sc2Dp0Y4XYOMRjhqEZ4UFM3Fg02MdtHYp
+BJ4+SmkFoZzhgaWfTlBqBqWumkGoqRJimQOA2OBYrEgMgmslD+7q66/ABivssMQW
+a+yxyCar7LIFzDZLQgIAOw==
+
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=text1.gif
+Content-Type: image/gif; name=text1.gif
+Content-Location: http://vinnitsa.com/next/next/images/text1.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhtAAWAKIAAEZGRo+Pj7y8vCcnJ2VlZXV1df///wAAACH5BAAAAAAALAAA
+AAC0ABYAAAP/eLrc/jDKSau9OOvNu/9gKI5kaZ5oqq5s675wLM90bS9AUZDDMfS3
+EqFACGYKht2IYDAAjSKmAHpBNgYAX/anAPwA4OwBrOCOv+HuM4MFYrUMb3kb7snb
+4bu4IZhSK1YMVlZ9BwFJAQJNUwaKU4WHBYmLAwaJARtIfk05BgxJB46djgegigSK
+jUMCh2uhfn8TgQuDnn2VoKVKWEgAt01KoIljThpITkwGnWS6h7SPjEScB1aVWax8
+sLERs12NTa8CALmgTAGHvn3jwTuOt8aWBazKSPKeSYUK8q+lh0xZVsb1wcYg3zZu
+nq4AcEaKXLsp/xqyo1asBwECAwoMuCjLY4micZ2IreulYFghYCApKrBUJttBCd0E
+2SrmkFgfZYp61DS06BVIgxCsWAKpiaWwRcr4gUsZaFyTIgW1vWwQc6oRoFZpNcoK
+5ZBUrlj2cLXRZqzZs2jTql3Ltq3bt3DjysWQAAA7
+
+------------hAQp0VhsWHOvXTDRj1MXZB
+Content-Disposition: inline; filename=man.jpg
+Content-Type: image/jpeg; name=man.jpg
+Content-Location: http://www.vinnitsa.com/next/next/images/man.jpg
+Content-Transfer-Encoding: Base64
+
+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
+SAPQRiYmP/gYmJiYmJiYmJiY/wDr/9k=
+
+------------hAQp0VhsWHOvXTDRj1MXZB--

@@ -1,0 +1,753 @@
+Content-Type: multipart/related; start=<op.mhtml.1256041288562.330c4a6c533c7c22@172.16.192.253>; boundary=----------I4WrLLtT2yJYWYNWLODwhf
+Content-Location: http://www.codenet.ru/webmast/smtp.php
+Subject: =?utf-8?Q?=D0=9E=D0=BF=D0=B8=D1=81=D0=B0=D0=BD=D0=B8=D0=B5=20=D0=BF=D1=80=D0=BE=D1=82=D0=BE=D0=BA=D0=BE=D0=BB=D0=B0=20SMTP?=
+MIME-Version: 1.0
+
+------------I4WrLLtT2yJYWYNWLODwhf
+Content-Disposition: inline; filename=smtp.htm
+Content-Type: text/html; charset=windows-1251; name=smtp.htm
+Content-ID: <op.mhtml.1256041288562.330c4a6c533c7c22@172.16.192.253>
+Content-Location: http://www.codenet.ru/webmast/smtp.php
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<TITLE>Описание протокола SMTP</TITLE>
+<META NAME="title" CONTENT="Описание протокола SMTP">
+<META NAME="content" CONTENT="CodeNet - все для программиста. Начиная от программирования для Web, заканчивая системным программированием. Большое количество документации по программированию видеоадаптеров, звуковых карт. Описане форматов файлов. Все с очень хорошими - понятными примерами. И многое другое.">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<LINK rel="stylesheet" type="text/css" href="http://www.codenet.ru/styles.css">
+<link rel="alternate" type="application/rss+xml" title="Новости CodeNet.Ru" href="http://www.codenet.ru/export/read.xml">
+<meta name="verify-v1" content="ZuirPLme4DTpdfqSqtolx2w0hscTr5RuK9Tek+K1aAs=" />
+</HEAD>
+
+<BODY bgcolor="white" class="m0">
+
+
+<div align="center" style="margin-bottom:10px;padding:10px;border-bottom:1px solid #C6D6DE;">
+<div align="center">
+
+<!--/* OpenX Javascript Tag v2.8.0 */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://r.codenet.ru/openx/www/delivery/ajs.php':'http://r.codenet.ru/openx/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=9");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://r.codenet.ru/openx/www/delivery/ck.php?n=a4a4968e&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://r.codenet.ru/openx/www/delivery/avw.php?zoneid=9&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a4a4968e' border='0' alt='' /></a></noscript>
+</div></div>
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="2%"></td><td width="16%">
+
+<a href="http://www.codenet.ru/"><img src="http://i.codenet.ru/www/images/logo.gif" border="0" width="74" height="28" alt="CodeNet - все для программиста!" title="CodeNet - все для программиста!"/><br/>
+<font color="#FF8C00">Все для программиста!</font></a>
+
+
+<script language="JavaScript" type="text/javascript">
+cnsd=document;cnst=escape(cnsd.title);
+cnst=cnst.replace(/\+/g,'%2B');cnsa=navigator.appName;
+cnsn=(cnsa.substring(0,2)=='Mi')?0:1;cnss=screen;cnspx=(cnsn==0)?cnss.colorDepth:cnss.pixelDepth;
+document.write('<img src="http://www.codenet.ru/nv/cnt-gif1x1.php?e='+cnss.width+'.'+cnss.height+'&amp;d='+cnspx+'&amp;r='+escape(cnsd.referrer)+'&amp;p='+escape(cnsd.location)+'&amp;t='+cnst+'" width="1" height="1" border="0">');
+</script><noscript><img src="http://www.codenet.ru/nv/cnt-gif1x1.php?468&amp;c=0" width="1" height="1" border="0" alt=""></noscript>
+
+<script type="text/javascript">
+<!--
+Nnv=navigator;Nna=Nnv.appName;Nd=document;Nd.cookie="b=b";Nc=0;if(Nd.cookie)Nc=1;
+Nn=(Nna.substring(0,2)=="Mi")?0:1;Ns=screen;Npx=(Nn==0)?Ns.colorDepth:Ns.pixelDepth;
+str='<img alt="рейтинг сайтов" src="http://c.cnstats.ru/25;'+Ns.width+'x'+Ns.height+';'+Npx+';'+Nc+';';
+str=str+escape(Nd.referrer)+';'+Math.random()+'" width="1" height="1" border="0">';
+document.write(str);
+// -->
+</script>
+<noscript><img src="http://c.cnstats.ru/25;0x0;0;0;-;0" width="1" height="1" border="0"></noscript> 
+
+
+</td><td width="80%">
+
+
+<!-- ПОИСКИ -->
+<table bgcolor="#C6D6DE" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td width="65%">
+<!-- ФОРМА ПОИСКА ПО РАЗДЕЛАМ САЙТА -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td colspan="15" style="padding-top:20px;padding-left:10px;padding-right:10px;padding-bottom:10px;">
+
+<form action="http://www.codenet.ru/search/search.php" method="get" style="margin:0;">
+<table cellspacing="0" cellpadding="2" border="0" width="100%"><tr>
+<td width="100%"><input style="width:100%" class="it" type="text" name="q" value=""></td>
+<td><input type="submit"  value="Искать" class="is"></td>
+</tr></table></form>
+
+
+</td></tr>
+<tr>
+
+<td class="se" width="10%">&nbsp;</td>
+<td nowrap class="sA"><a href="http://www.codenet.ru/">Статьи</a></td>
+<td class="se">&nbsp;</td>
+<td nowrap class="s"><a href="http://forum.codenet.ru/">Форум</a></td>
+<td class="se">&nbsp;</td>
+<td nowrap class="s"><a href="http://sources.codenet.ru/">Исходники</a></td>
+<td class="se">&nbsp;</td>
+<td nowrap class="s"><a href="http://cat.codenet.ru/">Каталог</a></td>
+<td class="se">&nbsp;</td>
+<td nowrap class="s"><a href="http://www.codenet.ru/hosting/">Хостинг</a></td>
+<td class="se">&nbsp;</td>
+<td nowrap class="s"><a href="http://www.codenet.ru/irc/">IRC</a></td>
+<td class="se" width="100%">&nbsp;</td>
+</tr>
+
+</table>
+<!--/ФОРМА-->
+
+</td><td width="35%" class="se" valign="top">
+
+
+
+<!-- ФОРМА ПОИСКА ПО РАЗДЕЛАМ САЙТА -->
+<form action="http://www.codenet.ru/search/" method="get" style="margin:0;">
+<table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+<td colspan="11" style="padding-top:6px;padding-left:10px;padding-right:10px;padding-bottom:2px;">
+&nbsp;Справочник функций
+<table cellspacing="0" cellpadding="2" border="0" width="100%"><tr>
+<td width="100%"><input style="width:100%" class="it" type="text" name="q" value=""></td>
+<td>
+<input type="submit"  value="Искать" class="is"></td>
+</tr></table>
+
+</td></tr>
+<tr>
+<td style="padding-left:12px;">
+<select name="spr" class="ise">
+<option value="any">Все справочники
+<option value="cpp">Си/Си++
+<option value="cpp1">Borland C++ 
+<option value="cpp2">Си/Си++ (DOS)
+<option value="cpp3">Си/Си++ (Unix/Linux)
+<option value="pascal">Pascal
+<option value="perl">Perl
+<option value="winapi">WinAPI
+</select>
+</td>
+</tr>
+
+</table>
+</form>
+<!--/ФОРМА-->
+
+
+</td></tr></table>
+<!-- /ПОИСКИ -->
+
+
+
+</td><td width="2%">
+</td></tr></table>
+
+<br>	
+<table border="0" cellspacing="10" cellpadding="0">
+<tr><td width="16%" valign="top">
+
+<table bgcolor="#C6D6DE" width="100%" cellspacing="0" cellpadding="6"><tr><td class="se">
+<H2 style="width:144px">Ваш аккаунт</H2>
+
+<script type="text/javascript" src="http://forum.codenet.ru/clientscript/vbulletin_md5.js?v=363"></script>
+<form class="m0" action="http://forum.codenet.ru/login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+
+<input type="hidden" name="do" value="login" />
+<input type="hidden" name="url" value="http://www.codenet.ru/webmast/smtp.php?1256044701" />
+<input type="hidden" name="vb_login_md5password" />
+<input type="hidden" name="vb_login_md5password_utf" />
+<input type="hidden" name="s" value="" />
+
+<table width="100%" cellspacing="0" cellpadding="1" border="0">
+<tr><td>Логин:</td><td width="100%"><input type="text" name="vb_login_username" accesskey="u" style="width:100%" class="ism"></td></tr>
+<tr><td>Пароль:</td><td><input type="password" name="vb_login_password" style="width:100%" class="ism"></td></tr>
+<tr><td colspan="2">
+
+<table>
+<tr>
+<td><input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar"></td>
+<td><label for="cb_cookieuser_navbar">Запомнить меня</label></td>
+</tr>
+</table>
+<input type="submit" value="Войти!" class="ism"></td></tr>
+</table>
+
+</form>
+
+<br>
+<a href="http://forum.codenet.ru/login.php?do=lostpw">Забыли пароль?</a><br>
+<a href="http://forum.codenet.ru/register.php" style="color:red;"><B>Регистрация</B></a>
+
+
+</td></tr></table>
+<br>
+<div align="center" style="margin-bottom:8px;">
+
+<!--/* OpenX Тэг Javascript v2.6.3 */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://r.codenet.ru/openx/www/delivery/ajs.php':'http://r.codenet.ru/openx/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=2");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://r.codenet.ru/openx/www/delivery/ck.php?n=a5751758&amp;cb=38358' target='_blank'><img src='http://r.codenet.ru/openx/www/delivery/avw.php?zoneid=2&amp;n=a5751758' border='0' alt='' /></a></noscript>
+</div>
+<table bgcolor="#C6D6DE" width="100%" cellspacing="0" cellpadding="6"><tr><td class="se">
+
+<H3>Почтовая рассылка</H3>
+<form action="http://www.codenet.ru/mail/subs.php" method="post" class="m0">
+
+<input name="email" type="text" value="ваш@email.ru" accesskey="e" title="почтовая рассылка (Alt-E)" style='width:100%' onfocus='if (this.value=="ваш@email.ru") this.value=""' onblur='if (this.value=="") this.value="ваш@email.ru"'>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr><td><input checked type="radio" name="sub" value="1" id="subs1"></td><td><label for="subs1">Подписаться</label></td></tr>
+<tr><td><input type="radio" name="sub" value="0" id="subs2"></td><td><label for="subs2">Отписаться</label></td></tr>
+</table> 
+
+<input type="submit" value="Вперед !" class="ism"><br><br>
+
+Подписчиков: <B>6398</B>
+<br/><small style="color:#404040;">(Из них RSS: 0)</small><br/><br/>
+<a href="http://www.codenet.ru/mail/">Последний выпуск</a>: <B>20.08.2009</B>
+
+</form>
+</td></tr></table>
+
+</td>
+<td width="84%" valign="top" style="padding-right:10px;" id="content">
+
+<div class="path"><a href="/">CodeNet</a> / <a href="/cat/WEB-Development/">Веб программирование</a> / <a href="/cat/WEB-Development/Internet-Protocols-and-Documents/">Протоколы и стандарты</a> </div><div style="padding:0;margin:0;width:100%;border-bottom:solid 1px #C6D6DE;"></div>
+
+<!-- google_ad_section_start -->
+<H1>Описание протокола SMTP</H1>
+<H2>Введение</H2>
+
+<div align=right>Александр Бельбаков, <a href="http://r.codenet.ru/?http://HiProg.com/vb/" target=_blank>HiProg.com "Технологии программирования"</a></div>
+
+<P>Основная задача протокола SMTP (Simple Mail Transfer Protocol) заключается в том, чтобы обеспечивать передачу электронных сообщений (почту). Для работы через протокол SMTP клиент создаёт TCP соединение с сервером через порт 25. Затем клиент и SMTP сервер обмениваются информацией пока соединение не будет закрыто или прервано. Основной процедурой в SMTP является передача почты (Mail Procedure). Далее идут процедуры форвардинга почты (Mail Forwarding), проверка имён почтового ящика и вывод списков почтовых групп. Самой первой процедурой является открытие канала передачи, а последней - его закрытие.
+<P>Команды SMTP указывают серверу, какую операцию хочет произвести клиент. Команды состоят из ключевых слов, за которыми следует один или более параметров. Ключевое слово состот из 4-х символов и разделено от аргумента одним или несколькими пробелами. Каждая командная строка заканчивается символами CRLF. Вот синтаксис всех команд протокола SMTP (SP - пробел):
+<PRE>
+HELO &lt;SP&gt; &lt;domain&gt; &lt;CRLF&gt;
+MAIL &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt; 
+RCPT &lt;SP&gt; TO:&lt;forward-path&gt; &lt;CRLF&gt; 
+DATA &lt;CRLF&gt;
+RSET &lt;CRLF&gt; 
+SEND &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt; 
+SOML &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt; 
+SAML &lt;SP&gt; FROM:&lt;reverse-path&gt; &lt;CRLF&gt; 
+VRFY &lt;SP&gt; &lt;string&gt; &lt;CRLF&gt; 
+EXPN &lt;SP&gt; &lt;string&gt; &lt;CRLF&gt; 
+HELP &lt;SP&gt; &lt;string&gt; &lt;CRLF&gt; 
+NOOP &lt;CRLF&gt; 
+QUIT &lt;CRLF&gt;
+</PRE>
+<P>Обычный ответ SMTP сервера состоит из номера ответа, за которым через пробел следует дополнительный текст. Номер ответа служит индикатором состояния сервера. 
+
+<H2>Отправка почты</H2>
+
+<P>Первым делом подключаемся к SMTP серверу через порт 25. Теперь надо передать серверу команду HELLO и наш IP адрес:
+<PRE>
+C: HELLO 195.161.101.33
+S: 250 smtp.mail.ru is ready 
+</PRE>
+<P>При отправке почты передаём некоторые нужные данные (отправитель, получатель и само письмо):
+<PRE>
+C: MAIL FROM:&lt;drozd&gt; 'указываем отправителя
+S: 250 OK
+
+C: RCPT TO:&lt;drol@mail.ru&gt; 'указываем получателя
+S: 250 OK
+</PRE>
+<P>указываем серверу, что будем передавать содержание письма (заголовок и тело письма)
+<PRE>
+C: DATA 
+S: 354 Start mail input; end with &lt;CRLF&gt;.&lt;CRLF&gt; 
+</PRE>
+<P>передачу письма необходимо завершить символами CRLF.CRLF
+<PRE>
+S: 250 OK 
+
+C: From: Drozd &lt;drozd@mail.ru&gt; 
+C: To: Drol &lt;drol@mail.ru&gt;
+C: Subject: Hello 
+</PRE>
+<P>между заголовком письма и его текстом не одна пара CRLF, а две.
+<PRE>
+C: Hello Drol!
+C: You will be die on next week!
+</PRE>
+<P>заканчиваем передачу символами CRLF.CRLF
+<PRE>
+S: 250 OK
+</PRE>
+<P>Теперь завершаем работу, отправляем команду QUIT:
+<PRE>
+S: QUIT
+C: 221 smtp.mail.ru is closing transmission channel
+</PRE>
+<H2>&gt; Другие команды</H2>
+
+<UL>
+<LI>SEND - используется вместо команды MAIL и указыает, что почта должна быть доставлена на терминал пользователя.
+<LI>SOML, SAML - комбинации команд SEND или MAIL, SEND и MAIL соответственно.
+<LI>RSET - указвает серверу прервать выполнение текущего процесса. Все сохранённые данные (отправитель, получатель и др) удаляются. Сервер должен отправить положительный ответ.
+<LI>VRFY - просит сервер проверить, является ли переданный аргумент именем пользователя. В случае успеха сервер возвращает полное имя пользователя.
+<LI>EXPN - просит сервер подтвердить, что переданный аргумент - это список почтовой группы, и если так, то сервер выводит членов этой группы.
+<LI>HELP - запрашивает у сервера полезную помощь о переданной в качестве аргумента команде.
+<LI>NOOP - на вызов этой команды сервер должен положительно ответить. NOOP ничего не делает и никак не влияет на указанные до этого данные. 
+</UL>
+<!-- google_ad_section_end -->
+<div style="width:100%;border-bottom:solid 1px #C6D6DE;"></div>
+<a name="comments"></a>
+<H1>Комментарии пользователей (всего 24)</H1>
+
+
+<H4><a href="http://forum.codenet.ru/member.php?u=52286" target="_blank">Максим САМОЙЛОВ</a> / 18 сентября 2009,  00:11:03</H4>
+<P>КОМЕНТАРИЙ НЕТ -ТА ЖЕ ПРОБЛЕМА ЧТО И У ОСТАЛЬНЫХ. НЕ МОГУ ПЕРЕДАТЬ СНИМКИ С КОМПА НА КОМП.  узел SMTR-е найден и т.д.как и у остальных. в чем дело? почему у всех все одинаково? что-то с системой повидимому-или инструкции не то говорят что нужно делать. делаю все так как написано в книге -виндовс для чайников- но все бестолку. не могу ничего передать.langer@mail.ru</P>
+
+
+<H4><a href="http://forum.codenet.ru/member.php?u=24554" target="_blank">пакахондас</a> / 06 мая 2007,  05:30:32</H4>
+<P>Для прохождения авторизации набирайте не HELO ,а EHLO: <br />
+потом AUTH LOGIN ;</P>
+
+
+<H4>Zanna / 28 апреля 2006,  19:50:23</H4>
+<P>У меня такие же проблему как у Антона<br />
+</P>
+
+
+<H4>Григорий / 18 апреля 2006,  21:28:00</H4>
+<P>Узел  'SMTP' не найден. Проверьте введенное имя сервера. Учетная запись: 'IMAR', Сервер: 'SMTP', Протокол: SMTP, Порт: 25, Защита (SSL): Нет, Ошибка сокета: 11001, Код ошибки: 0x800CCC0D</P>
+
+
+<H4>ольга / 16 апреля 2006,  17:41:47</H4>
+<P>Узел &quot;SMTP&quot; не найден.Проверьте введенное имя сервера. Учетная запись: &quot;POP3&quot;,Сервер:&quot;SVNP&quot;. Протокол; SMTP, ПОРТ:25, Защита(SSL):Нет. Ошибка сокета 11001, код ошибки:Oх800СССОD</P>
+
+
+<H4>Любитель / 20 марта 2006,  13:41:39</H4>
+<P>теперь smtp.mail.ru требует авторизации</P>
+
+
+<H4>Ламердед / 21 января 2006,  14:22:59</H4>
+<P>aa, чтобы файл отправлять - он кодируеться в базу64 и такжепередаеться....</P>
+
+
+<H4>Ламердед / 21 января 2006,  14:21:23</H4>
+<P>каму там на винапи нада..<br />
+дам тока кусок кода<br />
+данные<br />
+msgHELO    db 'HELO host',13,10<br />
+<br />
+<br />
+msgFROM   db 'mail from: milo@mail.ru',13,10<br />
+<br />
+msgRCPT   db 'RCPT TO: LAMERDEATH15@mail.ru',0dh,0ah<br />
+msgDATA    DB 'DATA',0dh,0ah<br />
+msgDATA2 db 'this is the test mail message from <br />
+<br />
+myself',0dh,0ah,0dh,0ah,'.',0dh,0ah<br />
+<br />
+<br />
+<br />
+КОД<br />
+ush offset wsd<br />
+mov eax, 0<br />
+mov ax, 0202h<br />
+push eax<br />
+call wsastartup<br />
+<br />
+<br />
+<br />
+<br />
+invoke	htons,25<br />
+mov sin2.sin_port, ax<br />
+mov sin2.sin_family, 2<br />
+push 0<br />
+push 1<br />
+push 2<br />
+call socket<br />
+mov s1, eax<br />
+push  sizeof (sockaddr_in)<br />
+push offset sin2<br />
+push s1<br />
+call connect<br />
+push sizeof msgrecv<br />
+push offset msgrecv<br />
+push s1<br />
+call recv<br />
+<br />
+<br />
+<br />
+<br />
+push 0<br />
+push sizeof msgHELO<br />
+push offset msgHELO<br />
+push s1<br />
+call send<br />
+push 0<br />
+push sizeof msgrecv<br />
+push offset msgrecv<br />
+push s1<br />
+call recv<br />
+<br />
+<br />
+<br />
+<br />
+push 0<br />
+push sizeof msgFROM<br />
+push offset msgFROM<br />
+push s1<br />
+call send<br />
+push 0<br />
+push sizeof msgrecv<br />
+push offset msgrecv<br />
+push s1<br />
+call recv<br />
+<br />
+<br />
+<br />
+<br />
+push 0<br />
+push sizeof msgRCPT<br />
+push offset msgRCPT<br />
+push s1<br />
+call send<br />
+<br />
+push 0<br />
+push sizeof msgrecv<br />
+push offset msgrecv<br />
+push s1<br />
+call recv<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+push 0<br />
+push sizeof msgDATA<br />
+push offset msgDATA<br />
+push s1<br />
+call send<br />
+push 0<br />
+push sizeof msgDATA2<br />
+push offset msgDATA2<br />
+push s1<br />
+call send<br />
+push 0<br />
+push sizeof msgrecv<br />
+push offset msgrecv<br />
+push s1<br />
+call recv<br />
+push 0<br />
+<br />
+<br />
+<br />
+<br />
+push 0<br />
+push sizeof msgQUIT<br />
+push offset msgQUIT<br />
+push s1<br />
+call send<br />
+<br />
+<br />
+собственна recv можна не юзать, это так для отладки...<br />
+ну с либой сокетов разберетесь<br />
+если че мыльте LAMERDEATH15@mail.ru</P>
+
+
+<H4>Тимур / 29 декабря 2005,  14:05:29</H4>
+<P>Интересно было бы посмотреть на примере исходника (желательно на WinAPI), как отправлять прикрепленный файл. А то в данной статье нету ни одного слова про это.</P>
+
+
+<H4>юля / 25 декабря 2005,  03:49:38</H4>
+<P>Возникла такая же проблема, как у Марины 05.06.2005г.<br />
+Вы бы подсказали, что делать?</P>
+<H4 style="color:red;">Отображены только последние 10 комментариев. <a href="/comments/?1757149623">Читать все комментарии &gt;&gt;</a></H4>
+<noindex>
+<a name="addcomment"></a>
+<div style="width:100%;border-bottom:solid 1px #C6D6DE;"></div>
+
+<H1>Оставить комментарий</H1>
+
+<P><font color=red>
+Оставлять комментарии могут только зарегистрированные пользователи.
+</font></P>
+
+<P>Если вы не являетесь зарегистрированным пользователем, то вам необходимо <a href="http://forum.codenet.ru/register.php">зарегистрироваться</a>.
+Регистрация бесплатна. Если вы уже зарегистрированы на CodeNet, то вам необходимо
+ввести логин и пароль в <a href="#top">верхней</a> (Alt-U) части страницы. </P>
+
+</noindex>
+</tr></table>
+
+<div style="margin-top:10px;padding:10px;border-top:solid 1px #C6D6DE;" align="center">
+
+<a href="http://www.codenet.ru/clame.php">Реклама на сайте</a> |
+<a href="http://www.codenet.ru/linkse.php">Обмен ссылками</a> |
+<a href="http://www.codenet.ru/links.php">Ссылки</a> |
+<a href="http://www.codenet.ru/export/">Экспорт (RSS)</a> |
+<a href="http://www.codenet.ru/contacts.php">Контакты</a>
+<br>
+<a href="http://www.codenet.ru/publish.php">Добавить статью</a> |
+<a href="http://sources.codenet.ru/upload.php">Добавить исходник</a> |
+<a href="http://www.codenet.ru/hosting/my.php">Добавить хостинг-провайдера</a> |
+<a href="http://cat.codenet.ru/cncat_add.php">Добавить сайт в каталог</a>
+<br>
+
+<span id="v12">
+</span>
+</div>
+
+</BODY>
+</HTML>
+------------I4WrLLtT2yJYWYNWLODwhf
+Content-Disposition: inline; filename=styles.css
+Content-Type: text/css; charset=windows-1251; name=styles.css
+Content-Location: http://www.codenet.ru/styles.css
+Content-Transfer-Encoding: 8bit
+
+a {text-decoration:none;color:#285A99;}
+a:hover {text-decoration:underline;}
+a[name] {color:#000000;text-decoration:none;}
+
+.w {width:3px;height:4px;background-color:white;}
+.b {width:3px;height:4px;background-color:#00AEEF;}
+.m0 {margin:0px;}
+
+.s	{border-left: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF; padding: 6px 10px;border-bottom: 1px solid #7B94C3;}
+.se	{border-bottom: 1px solid #7B94C3;}
+.sA	{border-left: 1px solid #7B94C3; border-right: 1px solid #7B94C3; border-top: 1px solid #7B94C3; background-color:white; padding: 6px 10px}
+hr {height:1px;color:#C6D6DE;}
+
+body {font-family:verdana;font-size:11px;}
+td,th {font-size:11px;}
+
+.is {font-family:verdana;font-size:12px}
+.ise {font-family:verdana;font-size:11px;color:#606060;}
+
+.ism {font-family:verdana;font-size:11px;}
+.hint {color:darkorange;font-family:arial;font-size:9px;}
+
+li {margin-top:5px;}
+#content li {font-size:120%;color:#404040;}
+h1 {font-size:150%;font-family:arial;color:#606060;}
+h2 {font-size:120%;font-family:verdana;}
+h3 {font-size:100%;font-family:verdana;margin:0;padding:0;margin-bottom:10px;}
+h4 {font-size:100%;background-color:#F0F0FF;border-bottom:solid 1px #7B94C3;padding:10px;}
+pre,.pre {color:green;font-size:110%;border-left:2px dashed #C0C0C0;padding:10px;}
+html>body pre {color:green;font-size:130%;border-left:2px dashed #C0C0C0;padding:10px;}
+p {font-size:120%;color:#404040;}
+.quote {font-size:100%;}
+
+.fm ul {padding:0;margin:0;list-style-type:none;}
+.fm ul li {margin:5px;color:#C0C0C0;list-style-type:none;}
+
+a.light {color:#A0A0A0;text-decoration:none;}
+a.light:hover {text-decoration:underline;}
+
+.clame {border: solid 1px #C0C0C0;margin-top:10px;padding:10px;}
+.clame h1 {margin-top:0;}
+.clame a {color:gray;}
+.clametext {color:#A0A0A0;font-size:9px;line-height:10px;}
+
+.rss {background-color:darkorange;width:22px;font-weight:bold;font-size:10px;padding:2px;margin-top:5px;}
+.yandex {background-color:red;width:13px;font-weight:bold;font-size:10px;padding:2px;margin-top:5px;margin-left:2px;}
+.rss a {color:white;}
+.yandex a {color:white;}
+
+#logo {font-size:19px;color:#00AEEF;}
+
+.dsc {padding:10px 0 5px 10px;color:gray;}
+.ath {padding-left:10px;padding-top:5px;padding-bottom:20px;}
+.cat {font-size:15px;}
+div.url {padding-left:10px;}
+a.url {color:green;}
+
+.path h1 {margin:0;margin-top:4px}
+.path {color:black;font-weight:bold;margin-bottom:2px;}
+.path a {font-weight:normal;}
+
+.catalog {border-bottom:1px solid #C6D6DE;}
+.catalog ul {list-style-type:none;}
+.catalog li {list-style-type:none;margin:5px;color:#C0C0C0;}
+.catalog li a {font-weight:bold;}
+
+.g {color:#C0C0C0;}
+input.leftright {border: solid 1px #C0C0C0;text-align:center;}
+.leftright {padding-left:3px;padding-right:3px;}
+
+.t0 {background-color:#C6D6DE}
+.t2 {background-color:#E8F0FF}
+
+HTML>BODY .quote {background-color:white;padding:10px;border-left:2px dashed #C6D6DE;width:90%;margin-right:0px;}
+.quote {background-color:white;padding:10px;border-left:2px dashed #C6D6DE;width:100%;margin-right:0px;}
+
+.alt2 {font-size:12px;}
+
+#maillist p {font-size:100%}
+
+.forumhint {color:red;padding-top:5px;padding-bottom:5px;}
+
+#v12 {color:gray;font-family:arial;font-size:9px;}
+#v12 a {color:gray;font-family:arial;font-size:9px;}
+
+.document_path {border-bottom:solid 1px #E0E0E0;padding-bottom:5px;color:#808080;}
+
+.softlist td {padding:5px;border-bottom:1px solid #C0C0C0;}
+.softlist td.first {padding:5px;border-bottom:1px solid #C0C0C0;border-right:1px solid #E0E0E0;}
+------------I4WrLLtT2yJYWYNWLODwhf
+Content-Disposition: inline; filename=logo.gif
+Content-Type: image/gif; name=logo.gif
+Content-Location: http://i.codenet.ru/www/images/logo.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhSgAcAIAAAP///wCu7yH5BAAAAAAALAAAAABKABwAAALVhI+pyxYPo5y0
+totZ3Xzn/3XiCJbNiHrAdKirdD4Km0Bx4MA51eqLXfP1cBrZKzKkHYE/I0I5vO2Y
+LmiQ+BTupMeZk/oNI7fkpY/GjJbBWCU7edal12K1uV2fxsfzLh0P+PbnJudkJ+iX
+BWgHF2jUh4h4mKfIBgRJKfnHqOdIhLm4eTWJ1WiaSJraqXpn+WgomugaKmuxihob
+uUdKyAdbSzvLWlU41ipmBcx5d9rrrKVcdspMfewJyjqNtvdsPPzbbSJ+lVL+Ow5i
+rl6KXrJu3j7+Xl4AADs=
+
+------------I4WrLLtT2yJYWYNWLODwhf
+Content-Disposition: inline; filename=vbulletin_md5.js
+Content-Type: application/x-javascript; name=vbulletin_md5.js
+Content-Location: http://forum.codenet.ru/clientscript/vbulletin_md5.js?v=363
+Content-Transfer-Encoding: Base64
+
+dmFyIGhleGNhc2U9MDt2YXIgYjY0cGFkPSIiO3ZhciBjaHJzej04O2Z1bmN0aW9u
+IGhleF9tZDUoQSl7cmV0dXJuIGJpbmwyaGV4KGNvcmVfbWQ1KHN0cjJiaW5sKEEp
+LEEubGVuZ3RoKmNocnN6KSl9ZnVuY3Rpb24gYjY0X21kNShBKXtyZXR1cm4gYmlu
+bDJiNjQoY29yZV9tZDUoc3RyMmJpbmwoQSksQS5sZW5ndGgqY2hyc3opKX1mdW5j
+dGlvbiBzdHJfbWQ1KEEpe3JldHVybiBiaW5sMnN0cihjb3JlX21kNShzdHIyYmlu
+bChBKSxBLmxlbmd0aCpjaHJzeikpfWZ1bmN0aW9uIGhleF9obWFjX21kNShBLEIp
+e3JldHVybiBiaW5sMmhleChjb3JlX2htYWNfbWQ1KEEsQikpfWZ1bmN0aW9uIGI2
+NF9obWFjX21kNShBLEIpe3JldHVybiBiaW5sMmI2NChjb3JlX2htYWNfbWQ1KEEs
+QikpfWZ1bmN0aW9uIHN0cl9obWFjX21kNShBLEIpe3JldHVybiBiaW5sMnN0cihj
+b3JlX2htYWNfbWQ1KEEsQikpfWZ1bmN0aW9uIGNvcmVfbWQ1KEssRil7S1tGPj41
+XXw9MTI4PDwoKEYpJTMyKTtLWygoKEYrNjQpPj4+OSk8PDQpKzE0XT1GO3ZhciBK
+PTE3MzI1ODQxOTM7dmFyIEk9LTI3MTczMzg3OTt2YXIgSD0tMTczMjU4NDE5NDt2
+YXIgRz0yNzE3MzM4Nzg7Zm9yKHZhciBDPTA7QzxLLmxlbmd0aDtDKz0xNil7dmFy
+IEU9Sjt2YXIgRD1JO3ZhciBCPUg7dmFyIEE9RztKPW1kNV9mZihKLEksSCxHLEtb
+QyswXSw3LC02ODA4NzY5MzYpO0c9bWQ1X2ZmKEcsSixJLEgsS1tDKzFdLDEyLC0z
+ODk1NjQ1ODYpO0g9bWQ1X2ZmKEgsRyxKLEksS1tDKzJdLDE3LDYwNjEwNTgxOSk7
+ST1tZDVfZmYoSSxILEcsSixLW0MrM10sMjIsLTEwNDQ1MjUzMzApO0o9bWQ1X2Zm
+KEosSSxILEcsS1tDKzRdLDcsLTE3NjQxODg5Nyk7Rz1tZDVfZmYoRyxKLEksSCxL
+W0MrNV0sMTIsMTIwMDA4MDQyNik7SD1tZDVfZmYoSCxHLEosSSxLW0MrNl0sMTcs
+LTE0NzMyMzEzNDEpO0k9bWQ1X2ZmKEksSCxHLEosS1tDKzddLDIyLC00NTcwNTk4
+Myk7Sj1tZDVfZmYoSixJLEgsRyxLW0MrOF0sNywxNzcwMDM1NDE2KTtHPW1kNV9m
+ZihHLEosSSxILEtbQys5XSwxMiwtMTk1ODQxNDQxNyk7SD1tZDVfZmYoSCxHLEos
+SSxLW0MrMTBdLDE3LC00MjA2Myk7ST1tZDVfZmYoSSxILEcsSixLW0MrMTFdLDIy
+LC0xOTkwNDA0MTYyKTtKPW1kNV9mZihKLEksSCxHLEtbQysxMl0sNywxODA0NjAz
+NjgyKTtHPW1kNV9mZihHLEosSSxILEtbQysxM10sMTIsLTQwMzQxMTAxKTtIPW1k
+NV9mZihILEcsSixJLEtbQysxNF0sMTcsLTE1MDIwMDIyOTApO0k9bWQ1X2ZmKEks
+SCxHLEosS1tDKzE1XSwyMiwxMjM2NTM1MzI5KTtKPW1kNV9nZyhKLEksSCxHLEtb
+QysxXSw1LC0xNjU3OTY1MTApO0c9bWQ1X2dnKEcsSixJLEgsS1tDKzZdLDksLTEw
+Njk1MDE2MzIpO0g9bWQ1X2dnKEgsRyxKLEksS1tDKzExXSwxNCw2NDM3MTc3MTMp
+O0k9bWQ1X2dnKEksSCxHLEosS1tDKzBdLDIwLC0zNzM4OTczMDIpO0o9bWQ1X2dn
+KEosSSxILEcsS1tDKzVdLDUsLTcwMTU1ODY5MSk7Rz1tZDVfZ2coRyxKLEksSCxL
+W0MrMTBdLDksMzgwMTYwODMpO0g9bWQ1X2dnKEgsRyxKLEksS1tDKzE1XSwxNCwt
+NjYwNDc4MzM1KTtJPW1kNV9nZyhJLEgsRyxKLEtbQys0XSwyMCwtNDA1NTM3ODQ4
+KTtKPW1kNV9nZyhKLEksSCxHLEtbQys5XSw1LDU2ODQ0NjQzOCk7Rz1tZDVfZ2co
+RyxKLEksSCxLW0MrMTRdLDksLTEwMTk4MDM2OTApO0g9bWQ1X2dnKEgsRyxKLEks
+S1tDKzNdLDE0LC0xODczNjM5NjEpO0k9bWQ1X2dnKEksSCxHLEosS1tDKzhdLDIw
+LDExNjM1MzE1MDEpO0o9bWQ1X2dnKEosSSxILEcsS1tDKzEzXSw1LC0xNDQ0Njgx
+NDY3KTtHPW1kNV9nZyhHLEosSSxILEtbQysyXSw5LC01MTQwMzc4NCk7SD1tZDVf
+Z2coSCxHLEosSSxLW0MrN10sMTQsMTczNTMyODQ3Myk7ST1tZDVfZ2coSSxILEcs
+SixLW0MrMTJdLDIwLC0xOTI2NjA3NzM0KTtKPW1kNV9oaChKLEksSCxHLEtbQys1
+XSw0LC0zNzg1NTgpO0c9bWQ1X2hoKEcsSixJLEgsS1tDKzhdLDExLC0yMDIyNTc0
+NDYzKTtIPW1kNV9oaChILEcsSixJLEtbQysxMV0sMTYsMTgzOTAzMDU2Mik7ST1t
+ZDVfaGgoSSxILEcsSixLW0MrMTRdLDIzLC0zNTMwOTU1Nik7Sj1tZDVfaGgoSixJ
+LEgsRyxLW0MrMV0sNCwtMTUzMDk5MjA2MCk7Rz1tZDVfaGgoRyxKLEksSCxLW0Mr
+NF0sMTEsMTI3Mjg5MzM1Myk7SD1tZDVfaGgoSCxHLEosSSxLW0MrN10sMTYsLTE1
+NTQ5NzYzMik7ST1tZDVfaGgoSSxILEcsSixLW0MrMTBdLDIzLC0xMDk0NzMwNjQw
+KTtKPW1kNV9oaChKLEksSCxHLEtbQysxM10sNCw2ODEyNzkxNzQpO0c9bWQ1X2ho
+KEcsSixJLEgsS1tDKzBdLDExLC0zNTg1MzcyMjIpO0g9bWQ1X2hoKEgsRyxKLEks
+S1tDKzNdLDE2LC03MjI1MjE5NzkpO0k9bWQ1X2hoKEksSCxHLEosS1tDKzZdLDIz
+LDc2MDI5MTg5KTtKPW1kNV9oaChKLEksSCxHLEtbQys5XSw0LC02NDAzNjQ0ODcp
+O0c9bWQ1X2hoKEcsSixJLEgsS1tDKzEyXSwxMSwtNDIxODE1ODM1KTtIPW1kNV9o
+aChILEcsSixJLEtbQysxNV0sMTYsNTMwNzQyNTIwKTtJPW1kNV9oaChJLEgsRyxK
+LEtbQysyXSwyMywtOTk1MzM4NjUxKTtKPW1kNV9paShKLEksSCxHLEtbQyswXSw2
+LC0xOTg2MzA4NDQpO0c9bWQ1X2lpKEcsSixJLEgsS1tDKzddLDEwLDExMjY4OTE0
+MTUpO0g9bWQ1X2lpKEgsRyxKLEksS1tDKzE0XSwxNSwtMTQxNjM1NDkwNSk7ST1t
+ZDVfaWkoSSxILEcsSixLW0MrNV0sMjEsLTU3NDM0MDU1KTtKPW1kNV9paShKLEks
+SCxHLEtbQysxMl0sNiwxNzAwNDg1NTcxKTtHPW1kNV9paShHLEosSSxILEtbQysz
+XSwxMCwtMTg5NDk4NjYwNik7SD1tZDVfaWkoSCxHLEosSSxLW0MrMTBdLDE1LC0x
+MDUxNTIzKTtJPW1kNV9paShJLEgsRyxKLEtbQysxXSwyMSwtMjA1NDkyMjc5OSk7
+Sj1tZDVfaWkoSixJLEgsRyxLW0MrOF0sNiwxODczMzEzMzU5KTtHPW1kNV9paShH
+LEosSSxILEtbQysxNV0sMTAsLTMwNjExNzQ0KTtIPW1kNV9paShILEcsSixJLEtb
+Qys2XSwxNSwtMTU2MDE5ODM4MCk7ST1tZDVfaWkoSSxILEcsSixLW0MrMTNdLDIx
+LDEzMDkxNTE2NDkpO0o9bWQ1X2lpKEosSSxILEcsS1tDKzRdLDYsLTE0NTUyMzA3
+MCk7Rz1tZDVfaWkoRyxKLEksSCxLW0MrMTFdLDEwLC0xMTIwMjEwMzc5KTtIPW1k
+NV9paShILEcsSixJLEtbQysyXSwxNSw3MTg3ODcyNTkpO0k9bWQ1X2lpKEksSCxH
+LEosS1tDKzldLDIxLC0zNDM0ODU1NTEpO0o9c2FmZV9hZGQoSixFKTtJPXNhZmVf
+YWRkKEksRCk7SD1zYWZlX2FkZChILEIpO0c9c2FmZV9hZGQoRyxBKX1yZXR1cm4g
+QXJyYXkoSixJLEgsRyl9ZnVuY3Rpb24gbWQ1X2NtbihGLEMsQixBLEUsRCl7cmV0
+dXJuIHNhZmVfYWRkKGJpdF9yb2woc2FmZV9hZGQoc2FmZV9hZGQoQyxGKSxzYWZl
+X2FkZChBLEQpKSxFKSxCKX1mdW5jdGlvbiBtZDVfZmYoQyxCLEcsRixBLEUsRCl7
+cmV0dXJuIG1kNV9jbW4oKEImRyl8KCh+QikmRiksQyxCLEEsRSxEKX1mdW5jdGlv
+biBtZDVfZ2coQyxCLEcsRixBLEUsRCl7cmV0dXJuIG1kNV9jbW4oKEImRil8KEcm
+KH5GKSksQyxCLEEsRSxEKX1mdW5jdGlvbiBtZDVfaGgoQyxCLEcsRixBLEUsRCl7
+cmV0dXJuIG1kNV9jbW4oQl5HXkYsQyxCLEEsRSxEKX1mdW5jdGlvbiBtZDVfaWko
+QyxCLEcsRixBLEUsRCl7cmV0dXJuIG1kNV9jbW4oR14oQnwofkYpKSxDLEIsQSxF
+LEQpfWZ1bmN0aW9uIGNvcmVfaG1hY19tZDUoQyxGKXt2YXIgRT1zdHIyYmlubChD
+KTtpZihFLmxlbmd0aD4xNil7RT1jb3JlX21kNShFLEMubGVuZ3RoKmNocnN6KX12
+YXIgQT1BcnJheSgxNiksRD1BcnJheSgxNik7Zm9yKHZhciBCPTA7QjwxNjtCKysp
+e0FbQl09RVtCXV45MDk1MjI0ODY7RFtCXT1FW0JdXjE1NDk1NTY4Mjh9dmFyIEc9
+Y29yZV9tZDUoQS5jb25jYXQoc3RyMmJpbmwoRikpLDUxMitGLmxlbmd0aCpjaHJz
+eik7cmV0dXJuIGNvcmVfbWQ1KEQuY29uY2F0KEcpLDUxMisxMjgpfWZ1bmN0aW9u
+IHNhZmVfYWRkKEEsRCl7dmFyIEM9KEEmNjU1MzUpKyhEJjY1NTM1KTt2YXIgQj0o
+QT4+MTYpKyhEPj4xNikrKEM+PjE2KTtyZXR1cm4oQjw8MTYpfChDJjY1NTM1KX1m
+dW5jdGlvbiBiaXRfcm9sKEEsQil7cmV0dXJuKEE8PEIpfChBPj4+KDMyLUIpKX1m
+dW5jdGlvbiBzdHIyYmlubChEKXt2YXIgQz1uZXcgQXJyYXkoKTt2YXIgQT0oMTw8
+Y2hyc3opLTE7Zm9yKHZhciBCPTA7QjxELmxlbmd0aCpjaHJzejtCKz1jaHJzeil7
+Q1tCPj41XXw9KEQuY2hhckNvZGVBdChCL2NocnN6KSZBKTw8KEIlMzIpfXJldHVy
+biBDfWZ1bmN0aW9uIGJpbmwyc3RyKEMpe3ZhciBEPSIiO3ZhciBBPSgxPDxjaHJz
+eiktMTtmb3IodmFyIEI9MDtCPEMubGVuZ3RoKjMyO0IrPWNocnN6KXtEKz1TdHJp
+bmcuZnJvbUNoYXJDb2RlKChDW0I+PjVdPj4+KEIlMzIpKSZBKX1yZXR1cm4gRH1m
+dW5jdGlvbiBiaW5sMmhleChDKXt2YXIgQj1oZXhjYXNlPyIwMTIzNDU2Nzg5QUJD
+REVGIjoiMDEyMzQ1Njc4OWFiY2RlZiI7dmFyIEQ9IiI7Zm9yKHZhciBBPTA7QTxD
+Lmxlbmd0aCo0O0ErKyl7RCs9Qi5jaGFyQXQoKENbQT4+Ml0+PigoQSU0KSo4KzQp
+KSYxNSkrQi5jaGFyQXQoKENbQT4+Ml0+PigoQSU0KSo4KSkmMTUpfXJldHVybiBE
+fWZ1bmN0aW9uIGJpbmwyYjY0KEQpe3ZhciBDPSJBQkNERUZHSElKS0xNTk9QUVJT
+VFVWV1hZWmFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6MDEyMzQ1Njc4OSsvIjt2
+YXIgRj0iIjtmb3IodmFyIEI9MDtCPEQubGVuZ3RoKjQ7Qis9Myl7dmFyIEU9KCgo
+RFtCPj4yXT4+OCooQiU0KSkmMjU1KTw8MTYpfCgoKERbQisxPj4yXT4+OCooKEIr
+MSklNCkpJjI1NSk8PDgpfCgoRFtCKzI+PjJdPj44KigoQisyKSU0KSkmMjU1KTtm
+b3IodmFyIEE9MDtBPDQ7QSsrKXtpZihCKjgrQSo2PkQubGVuZ3RoKjMyKXtGKz1i
+NjRwYWR9ZWxzZXtGKz1DLmNoYXJBdCgoRT4+NiooMy1BKSkmNjMpfX19cmV0dXJu
+IEZ9ZnVuY3Rpb24gc3RyX3RvX2VudChEKXt2YXIgQT0iIjt2YXIgQztmb3IoQz0w
+O0M8RC5sZW5ndGg7QysrKXt2YXIgRT1ELmNoYXJDb2RlQXQoQyk7dmFyIEI9IiI7
+aWYoRT4yNTUpe3doaWxlKEU+PTEpe0I9IjAxMjM0NTY3ODkiLmNoYXJBdChFJTEw
+KStCO0U9RS8xMH1pZihCPT0iIil7Qj0iMCJ9Qj0iIyIrQjtCPSImIitCO0I9Qisi
+OyI7QSs9Qn1lbHNle0ErPUQuY2hhckF0KEMpfX1yZXR1cm4gQX1mdW5jdGlvbiB0
+cmltKEEpe3doaWxlKEEuc3Vic3RyaW5nKDAsMSk9PSIgIil7QT1BLnN1YnN0cmlu
+ZygxLEEubGVuZ3RoKX13aGlsZShBLnN1YnN0cmluZyhBLmxlbmd0aC0xLEEubGVu
+Z3RoKT09IiAiKXtBPUEuc3Vic3RyaW5nKDAsQS5sZW5ndGgtMSl9cmV0dXJuIEF9
+ZnVuY3Rpb24gbWQ1aGFzaChCLEEsRSxDKXtpZihuYXZpZ2F0b3IudXNlckFnZW50
+LmluZGV4T2YoIk1vemlsbGEvIik9PTAmJnBhcnNlSW50KG5hdmlnYXRvci5hcHBW
+ZXJzaW9uKT49NCl7dmFyIEQ9aGV4X21kNShzdHJfdG9fZW50KHRyaW0oQi52YWx1
+ZSkpKTtBLnZhbHVlPUQ7aWYoRSl7RD1oZXhfbWQ1KHRyaW0oQi52YWx1ZSkpO0Uu
+dmFsdWU9RH1pZighQyl7Qi52YWx1ZT0iIn19cmV0dXJuIHRydWV9Ow==
+
+------------I4WrLLtT2yJYWYNWLODwhf--

@@ -1,0 +1,23 @@
+;
+;  Database file localhost.dns for 0.0.127.in-addr.arpa zone.
+;      Zone version:  
+;
+
+@                       IN	SOA	ns1-xx.axx-03-1.uir.pac.	administrator.ns1-xx.axx-03-1.uir.pac.	(
+		2006092001            ; serial number
+                        	900          ; refresh 15m
+                        	600          ; retry	10m
+                        	86400        ; expire	1 day
+                        	3600       ) ; minimum TTL	1h
+
+;
+;  Zone NS records
+;
+
+@                       IN	NS	ns1-xx.axx-03-1.uir.pac.
+
+;
+;  Zone records
+;
+
+1                       IN	PTR	localhost.

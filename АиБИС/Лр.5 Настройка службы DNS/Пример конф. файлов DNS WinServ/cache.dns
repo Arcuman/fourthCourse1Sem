@@ -1,0 +1,10 @@
+
+;
+;  Cache file:
+;
+
+.                       IN	NS	ns1.uir.pac.
+uir.pac.		IN	NS	ns1.uir.pac.
+;
+ns1.uir.pac.     	IN	A	192.168.5.254
+

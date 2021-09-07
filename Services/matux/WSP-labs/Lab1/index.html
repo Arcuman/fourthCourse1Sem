@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="Ajax('GET')">Get</button><br>
+        <form action="http://localhost:20001/.maa" method="POST">
+            <input type="number" name="result">
+            <input type="submit" value="POST">
+        </form><br>
+        <form onsubmit="Ajax('PUT', this); return false;">
+            <input type="number" name="add">
+            <input type="submit" value="PUT">
+        </form><br>
+        <button onclick="Ajax('DELETE')">DELETE</button><br>
+
+        <script>
+            const Ajax = async(method, body = null) => { 
+                if(body){
+                    let formData = new FormData(body);
+
+                    body = {};
+                    formData.forEach((value, key) => { 
+                        body[key] = value == "" ? 0 : Number(value);
+                    });
+                }
+
+                const headers = {
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                }
+
+                try {
+                    const response = await fetch('http://localhost:20001/.maa', 
+                        { method, body, headers }
+                    );
+                    const data = await response.json();
+
+                    if (!response.ok){
+                        throw new Error(data.message || 'Something wrong');
+                    }
+                    else{
+                        console.log(`${data.result}`);
+                        console.log(`${data.stack}`);
+                    }
+                } 
+                catch (e) {
+                    throw e;
+                }
+                
+                return false;
+            }
+        </script>
+    </body>
+</html>
