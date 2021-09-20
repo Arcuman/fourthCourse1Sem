@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <button onclick="Ajax('GET')">Get</button><br />
+    <div action="https://localhost:44308/api/values" method="POST">
+        <input type="number" id="resultInput" name="result" />
+        <button onclick="Ajax('POST')">POST</button><br />
+    </div>
+    <br />
+    <div action="https://localhost:44308/api/values" method="PUT">
+        <input type="number" id="addInput" name="add" />
+        <button onclick="Ajax('PUT')">PUT</button><br />
+    </div>
+    <br />
+    <button onclick="Ajax('DELETE')">DELETE</button><br />
+
+    <script>
+      const Ajax = async (method) => {
+              let body = {};
+          if (method === "POST") {
+              body.result = +document.querySelector('#resultInput').value;
+              }
+              if (method === "PUT") {
+              body.add = +document.querySelector('#addInput').value;
+              }
+
+              const headers = {
+                  'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+              }
+
+              try {
+                  let generatedParams = '';
+                  if(body.add){
+                    generatedParams += `?add=${body.add}`
+                  }
+                  if(body.result){
+                    generatedParams += `?result=${body.result}`
+                  }
+                  const response = await fetch(`https://localhost:44308/api/values${generatedParams}`,
+                      { method, headers }
+                  );
+                  const data = await response.json();
+
+                  if (!response.ok){
+                      throw new Error(data.message || 'Something wrong');
+                  }
+                  else {
+                      console.log(`Status: ${data.status}`);
+                      console.log(`Result: ${data.result}`);
+                      console.log(`Stack: ${data.stack}`);
+                  }
+              }
+              catch (e) {
+                  throw e;
+              }
+
+              return false;
+          }
+    </script>
+</body>
+</html>

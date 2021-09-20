@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project name="LAB_02" default="deploy">
+    <property name="src" location="src"/>
+    <property name="web" location="web"/>
+    <property name="build" location="build"/>
+    <property name="classes" location="${build}/classes"/>
+    <property name="dist" location="dist"/>
+    <property name="war" location="${dist}\${ant.project.name}.war"/>
+    <property name="tomcat" location="D:\bstu\fourthCourse1Sem\Java\install\apache-tomcat-9.0.52\"/>
+    <property name="lib" location="${tomcat}\lib"/>
+
+    <path id="compile.classpath">
+        <fileset dir="${lib}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <!-- define all targets -->
+    <target name="clean">
+        <delete dir="${classes}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+    <target name="init" depends="clean">
+        <mkdir dir="${classes}"/>
+        <mkdir dir="${dist}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac destdir="${build}/classes" srcdir="${src}">
+            <classpath refid="compile.classpath"/>
+        </javac>
+    </target>
+
+    <target name="build" depends="compile">
+        <war destfile="${war}" webxml="${web}/WEB-INF/web.xml">
+            <fileset dir="${web}"/>
+            <classes dir="${classes}"/>
+        </war>
+    </target>
+
+    <target name="deploy" depends="build">
+        <copy file="${war}" todir="${tomcat}/webapps"/>
+    </target>
+</project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<project name="L2" default="war">
+
+    <path id="compile.classpath">
+        <fileset dir="src">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="init">
+        <mkdir dir="build/classes" />
+        <mkdir dir="web/WEB-INF/static" />
+        <mkdir dir="web/WEB-INF/lib" />
+        <copy file="web/index.html" todir="web/WEB-INF/static" />
+        <property name="server" value="D:\bstu\fourthCourse1Sem\Java\install\apache-tomcat-9.0.52\"/>
+    </target>
+
+    <target name="compile" depends="init" >
+        <javac destdir="build\classes" debug="true" srcdir="src"
+               classpath = "${server}\lib\servlet-api.jar"/>
+    </target>
+
+    <target name="war" depends="compile">
+            <war destfile="dist/Lab2.war" webxml="web/WEB-INF/web.xml">
+            <lib dir="web/WEB-INF/lib"/>
+            <classes dir="build/classes"/>
+            <fileset dir="web/WEB-INF/static" />
+        </war>
+    </target>
+</project>
