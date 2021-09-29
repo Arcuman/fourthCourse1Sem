@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>index</title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <table style="border: 1px solid black; padding: 5px; margin: 5px;">
+        <tr>
+            <td>id</td>
+            <td><input type="text" id="id" /></td>
+        </tr>
+        <tr>
+            <td>sort</td>
+            <td><input type="text" id="sort" /></td>
+        </tr>
+        <tr>
+            <td>offset</td>
+            <td><input type="text" id="offset" /></td>
+        </tr>
+        <tr>
+            <td>limit</td>
+            <td><input type="text" id="limit" /></td>
+        </tr>
+        <tr>
+            <td>minid</td>
+            <td><input type="text" id="minid" /></td>
+        </tr>
+        <tr>
+            <td>maxid</td>
+            <td><input type="text" id="maxid" /></td>
+        </tr>
+        <tr>
+            <td>global_like</td>
+            <td><input type="text" id="global_like" /></td>
+        </tr>
+        <tr>
+            <td>columns</td>
+            <td><input type="text" id="columns" /></td>
+        </tr>
+    </table>
+    <div style="padding: 5px; margin: 5px">
+        <input style="margin: 5px" type="button" onclick="getStudents()" value="getStudets" />
+    </div>
+    <div style="padding: 5px; margin: 5px">
+        <input style="margin: 5px" type="button" onclick="getStudetsXML()" value="getStudetsXML" />
+    </div>
+    <div>
+        <table style="border: 1px solid red; padding: 5px; margin: 5px;">
+            <tr>
+                <td>name</td>
+                <td><input type="text" id="name-post" /></td>
+            </tr>
+            <tr>
+                <td>phone</td>
+                <td><input type="text" id="phone-post" /></td>
+            </tr>
+        </table>
+        <div style="padding: 5px; margin: 5px;">
+            <input type="button" onclick="createStudent()" value="add student" />
+        </div>
+    </div>
+    <table id="tbl" style="border: 1px solid black"></table>
+    <div id="tbl1" style="border: 1px solid black"></div>
+    <div id="ans"></div>
+    <script>
+        getStudents();
+
+        async function createStudent() {
+            let data = {
+                name: $("#name-post").val(),
+                phone: $("#phone-post").val()
+            }
+            fetch('/api/student', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                });
+        }
+
+        async function getStudetsXML() {
+            fetch(`https://localhost:44351/api/student?type=xml`, {
+                method: 'GET',
+            })
+                .then((response) => {
+                    return response.text()
+                })
+                .then((xml) => {
+                    console.log(xml)
+                    $("#tbl1").html(`<xmp>${xml.toString() }</xmp>`);
+                })
+            return
+        }
+        async function getStudents() {
+            let data = {};
+            let id;
+            if ($("#id").val() != "") id = $("#id").val();
+            if ($("#sort").val() != "") data["sort"] = $("#sort").val();
+            if ($("#offset").val() != "") data["offset"] = $("#offset").val();
+            if ($("#limit").val() != "") data["limit"] = $("#limit").val();
+            if ($("#minid").val() != "") data["minid"] = $("#minid").val();
+            if ($("#maxid").val() != "") data["maxid"] = $("#maxid").val();
+            if ($("#columns").val() != "") data["columns"] = $("#columns").val();
+            if ($("#global_like").val() != "") data["globalLike"] = $("#global_like").val();
+            if (id) {
+
+                fetch(`https://localhost:44351/api/student/${id}`, {
+                    method: 'GET',
+                })
+                    .then((response) => {
+                        return response.json();
+                    })
+                    .then((r) => {
+                        let html = "";
+                        html +=
+                            "<tr>" +
+                            "<td>" + r.student.Id + "</td>" +
+                            "<td><input type='text' id='name" + r.student.Id + "' value='" + r.student.Name + "' /></td>" +
+                            "<td><input type='text' id='phone" + r.student.Id + "' value='" + r.student.Phone + "' /></td>" +
+                            "<td style='color: green'>" + r.links.rel + "</td>" +
+                            "<td><a href = '" + r.links.href + "'>get<a/></td>" +
+                            "</tr>";
+                        $("#tbl").html(html);
+                    });
+                return
+            }
+            var url = new URL('https://localhost:44351/api/student')
+
+            url.search = new URLSearchParams(data).toString();
+            fetch(url, {
+                method: 'GET',
+                data: data,
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            })
+                .then((response) => {
+                    return response.json();
+                })
+                .then((result) => {
+                    let html = "";
+                    console.log(result)
+                    result.forEach(r => {
+                        html +=
+                            "<tr>" +
+                            "<td>" + r.Id + "</td>" +
+                            "<td><input type='text' id='name" + r.Id + "' value='" + r.Name + "' /></td>" +
+                            "<td><input type='text' id='phone" + r.Id + "' value='" + r.Phone + "' /></td>" +
+                            "<td style='color: green'>" + r.Links.rel + "</td>" +
+                            "<td><a href = '" + r.Links.href + "'>get<a/></td>" +
+                            "</tr>";
+                    })
+                    console.log("JHGSDSJDKSDJK")
+                    $("#tbl").html(html);
+                });
+
+        }
+
+    </script>
+</body>
+</html>
