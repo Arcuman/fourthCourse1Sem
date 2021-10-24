@@ -56,6 +56,8 @@
                 }
             };
         } else {
+            console.log('1')
+            console.log(xhr.getResponseHeader("Value-Z"))
             document.getElementById("z").value = xhr.getResponseHeader("Value-Z");
         }
     }
@@ -73,6 +75,7 @@
                 }
             };
         } else {
+            console.log('2')
             document.getElementById("result-task-2").innerHTML = "xml: " + stringifyXML(xhr);
         }
     }
@@ -90,6 +93,7 @@
                 }
             };
         } else {
+            console.log('3')
             document.getElementById("result-task-3").innerHTML = "json: " + stringifyJSON(xhr);
         }
     }
